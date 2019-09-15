@@ -35,6 +35,7 @@
 		B31A96F1232E683200D9FD08 /* NumberOfCommentsFormatterDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96F0232E683200D9FD08 /* NumberOfCommentsFormatterDefault.swift */; };
 		B31A96F3232E692600D9FD08 /* MockNumberOfCommentsFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96F2232E692600D9FD08 /* MockNumberOfCommentsFormatter.swift */; };
 		B31A96F6232E6AFF00D9FD08 /* NumberOfCommentsFormatterDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96F5232E6AFF00D9FD08 /* NumberOfCommentsFormatterDefaultTests.swift */; };
+		B31A96F8232E837D00D9FD08 /* WeakRefTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96F7232E837D00D9FD08 /* WeakRefTests.swift */; };
 		B33EC0EA232C0B08003255A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33EC0E9232C0B08003255A7 /* AppDelegate.swift */; };
 		B33EC0F1232C0B09003255A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33EC0F0232C0B09003255A7 /* Assets.xcassets */; };
 		B33EC0F4232C0B09003255A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33EC0F2232C0B09003255A7 /* LaunchScreen.storyboard */; };
@@ -96,6 +97,7 @@
 		B31A96F0232E683200D9FD08 /* NumberOfCommentsFormatterDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfCommentsFormatterDefault.swift; sourceTree = "<group>"; };
 		B31A96F2232E692600D9FD08 /* MockNumberOfCommentsFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNumberOfCommentsFormatter.swift; sourceTree = "<group>"; };
 		B31A96F5232E6AFF00D9FD08 /* NumberOfCommentsFormatterDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfCommentsFormatterDefaultTests.swift; sourceTree = "<group>"; };
+		B31A96F7232E837D00D9FD08 /* WeakRefTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeakRefTests.swift; path = ../WeakRefTests.swift; sourceTree = "<group>"; };
 		B33EC0E6232C0B08003255A7 /* PostsViewerSimplified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostsViewerSimplified.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33EC0E9232C0B08003255A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B33EC0F0232C0B09003255A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -255,6 +257,14 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		B31A96F9232E838500D9FD08 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B31A96F7232E837D00D9FD08 /* WeakRefTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		B33EC0DD232C0B08003255A7 = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +306,7 @@
 			children = (
 				B33EC0E9232C0B08003255A7 /* AppDelegate.swift */,
 				B31A96E5232E518700D9FD08 /* WeakRef.swift */,
+				B31A96F9232E838500D9FD08 /* Tests */,
 				B33EC0F0232C0B09003255A7 /* Assets.xcassets */,
 				B33EC0F2232C0B09003255A7 /* LaunchScreen.storyboard */,
 				B33EC0F5232C0B09003255A7 /* Info.plist */,
@@ -535,6 +546,7 @@
 				B33EC137232C54F7003255A7 /* MockURLSessionDataTask.swift in Sources */,
 				B31A96F6232E6AFF00D9FD08 /* NumberOfCommentsFormatterDefaultTests.swift in Sources */,
 				B31A96C2232E017D00D9FD08 /* MockPostsListCoordinator.swift in Sources */,
+				B31A96F8232E837D00D9FD08 /* WeakRefTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
