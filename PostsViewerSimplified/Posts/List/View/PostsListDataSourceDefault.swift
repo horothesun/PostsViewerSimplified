@@ -45,17 +45,14 @@ public final class PostsListDataSourceDefault: NSObject, PostsListDataSource {
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Self.cellReuseIdentifier, for: indexPath)
-        cell.selectionStyle = .none
-        cell.accessoryType = .disclosureIndicator
-
+        var cell = tableView.dequeueReusableCell(withIdentifier: Self.cellReuseIdentifier, for: indexPath)
         guard let postDisplayModels = postDisplayModels else {
-            cell.textLabel?.text = nil
+            Self.configure(cell: &cell, withText: nil)
             return cell
         }
 
         let displayModel = postDisplayModels[indexPath.row]
-        cell.textLabel?.text = displayModel.title
+        Self.configure(cell: &cell, withText: displayModel.title)
         return cell
     }
 
@@ -70,5 +67,13 @@ public final class PostsListDataSourceDefault: NSObject, PostsListDataSource {
 
         let postDisplayModel = postDisplayModels[indexPath.row]
         onSelection(postDisplayModel)
+    }
+
+    private static func configure(cell: inout UITableViewCell, withText text: String?) {
+        cell.selectionStyle = .none
+        cell.accessoryType = .disclosureIndicator
+        cell.textLabel?.font = .systemFont(ofSize: 13)
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.text = text
     }
 }
