@@ -5,7 +5,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     private lazy var navigationController = UINavigationController(nibName: nil, bundle: nil)
-    private lazy var postsListCoordinator = PostsListCoordinatorDefault()
+    private lazy var postsCoordinator = PostsCoordinatorDefault()
 
     func application(
         _ application: UIApplication,
@@ -17,7 +17,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
 
-        postsListCoordinator.start(from: navigationController) { /* do nothing */ }
+        postsCoordinator.start(from: navigationController) { /* do nothing */ }
 
         return true
     }

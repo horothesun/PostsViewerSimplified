@@ -9,10 +9,32 @@
 /* Begin PBXBuildFile section */
 		B31A96B4232D453E00D9FD08 /* PostsListDataSourceDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96B3232D453E00D9FD08 /* PostsListDataSourceDefault.swift */; };
 		B31A96B6232DE99C00D9FD08 /* PostsListDataSourceDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96B5232DE99C00D9FD08 /* PostsListDataSourceDefaultTests.swift */; };
-		B31A96BB232DFC8F00D9FD08 /* PostsListCoordinatorDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96BA232DFC8F00D9FD08 /* PostsListCoordinatorDefault.swift */; };
+		B31A96BB232DFC8F00D9FD08 /* PostsCoordinatorDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96BA232DFC8F00D9FD08 /* PostsCoordinatorDefault.swift */; };
 		B31A96BD232DFFE400D9FD08 /* SelectedPostRepoDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96BC232DFFE400D9FD08 /* SelectedPostRepoDefault.swift */; };
 		B31A96C0232E013F00D9FD08 /* MockSelectedPostRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96BF232E013F00D9FD08 /* MockSelectedPostRepo.swift */; };
 		B31A96C2232E017D00D9FD08 /* MockPostsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96C1232E017D00D9FD08 /* MockPostsListCoordinator.swift */; };
+		B31A96C7232E112800D9FD08 /* PostDetailsUseCaseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96C6232E112800D9FD08 /* PostDetailsUseCaseProtocols.swift */; };
+		B31A96C9232E16D700D9FD08 /* PostDetailsUseCaseSequential.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96C8232E16D700D9FD08 /* PostDetailsUseCaseSequential.swift */; };
+		B31A96CB232E197E00D9FD08 /* PostRemoteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96CA232E197E00D9FD08 /* PostRemoteUseCase.swift */; };
+		B31A96CD232E1B3400D9FD08 /* AuthorRemoteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96CC232E1B3400D9FD08 /* AuthorRemoteUseCase.swift */; };
+		B31A96CF232E1BFE00D9FD08 /* CommentsRemoteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96CE232E1BFE00D9FD08 /* CommentsRemoteUseCase.swift */; };
+		B31A96D2232E1D1F00D9FD08 /* PostDetailsViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96D1232E1D1F00D9FD08 /* PostDetailsViewModelProtocols.swift */; };
+		B31A96D4232E204C00D9FD08 /* PostDetailsViewModelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96D3232E204C00D9FD08 /* PostDetailsViewModelDefault.swift */; };
+		B31A96D6232E226C00D9FD08 /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96D5232E226C00D9FD08 /* PostDetailsViewController.swift */; };
+		B31A96D8232E25A600D9FD08 /* PostDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96D7232E25A600D9FD08 /* PostDetailsBuilder.swift */; };
+		B31A96DB232E38E300D9FD08 /* PostDetailsUseCaseSequentialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96DA232E38E300D9FD08 /* PostDetailsUseCaseSequentialTests.swift */; };
+		B31A96DE232E3A6A00D9FD08 /* MockPostUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96DD232E3A6A00D9FD08 /* MockPostUseCase.swift */; };
+		B31A96E0232E3DD000D9FD08 /* MockAuthorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96DF232E3DD000D9FD08 /* MockAuthorUseCase.swift */; };
+		B31A96E2232E3E6400D9FD08 /* MockCommentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96E1232E3E6400D9FD08 /* MockCommentsUseCase.swift */; };
+		B31A96E4232E431300D9FD08 /* PostRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96E3232E431300D9FD08 /* PostRemoteUseCaseTests.swift */; };
+		B31A96E6232E518700D9FD08 /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96E5232E518700D9FD08 /* WeakRef.swift */; };
+		B31A96E8232E5ECD00D9FD08 /* AuthorRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96E7232E5ECD00D9FD08 /* AuthorRemoteUseCaseTests.swift */; };
+		B31A96EA232E5EE700D9FD08 /* CommentsRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96E9232E5EE700D9FD08 /* CommentsRemoteUseCaseTests.swift */; };
+		B31A96ED232E625300D9FD08 /* PostDetailsViewModelDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96EC232E625300D9FD08 /* PostDetailsViewModelDefaultTests.swift */; };
+		B31A96EF232E639C00D9FD08 /* MockPostDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96EE232E639C00D9FD08 /* MockPostDetailsUseCase.swift */; };
+		B31A96F1232E683200D9FD08 /* NumberOfCommentsFormatterDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96F0232E683200D9FD08 /* NumberOfCommentsFormatterDefault.swift */; };
+		B31A96F3232E692600D9FD08 /* MockNumberOfCommentsFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96F2232E692600D9FD08 /* MockNumberOfCommentsFormatter.swift */; };
+		B31A96F6232E6AFF00D9FD08 /* NumberOfCommentsFormatterDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31A96F5232E6AFF00D9FD08 /* NumberOfCommentsFormatterDefaultTests.swift */; };
 		B33EC0EA232C0B08003255A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33EC0E9232C0B08003255A7 /* AppDelegate.swift */; };
 		B33EC0F1232C0B09003255A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33EC0F0232C0B09003255A7 /* Assets.xcassets */; };
 		B33EC0F4232C0B09003255A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33EC0F2232C0B09003255A7 /* LaunchScreen.storyboard */; };
@@ -23,8 +45,6 @@
 		B33EC118232C1ABD003255A7 /* MockHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33EC117232C1ABD003255A7 /* MockHttpClient.swift */; };
 		B33EC11B232C4071003255A7 /* PostsListViewModelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33EC11A232C4071003255A7 /* PostsListViewModelDefault.swift */; };
 		B33EC11D232C4093003255A7 /* PostsListViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33EC11C232C4093003255A7 /* PostsListViewModelProtocols.swift */; };
-		B33EC120232C4504003255A7 /* Result+Fold.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33EC11F232C4504003255A7 /* Result+Fold.swift */; };
-		B33EC123232C4542003255A7 /* Result+FoldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33EC122232C4542003255A7 /* Result+FoldTests.swift */; };
 		B33EC125232C479B003255A7 /* PostsListViewModelDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33EC124232C479B003255A7 /* PostsListViewModelDefaultTests.swift */; };
 		B33EC128232C47FF003255A7 /* MockAllPostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33EC127232C47FF003255A7 /* MockAllPostsUseCase.swift */; };
 		B33EC12A232C5343003255A7 /* PostsListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33EC129232C5343003255A7 /* PostsListBuilder.swift */; };
@@ -50,10 +70,32 @@
 /* Begin PBXFileReference section */
 		B31A96B3232D453E00D9FD08 /* PostsListDataSourceDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListDataSourceDefault.swift; sourceTree = "<group>"; };
 		B31A96B5232DE99C00D9FD08 /* PostsListDataSourceDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListDataSourceDefaultTests.swift; sourceTree = "<group>"; };
-		B31A96BA232DFC8F00D9FD08 /* PostsListCoordinatorDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListCoordinatorDefault.swift; sourceTree = "<group>"; };
+		B31A96BA232DFC8F00D9FD08 /* PostsCoordinatorDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCoordinatorDefault.swift; sourceTree = "<group>"; };
 		B31A96BC232DFFE400D9FD08 /* SelectedPostRepoDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPostRepoDefault.swift; sourceTree = "<group>"; };
 		B31A96BF232E013F00D9FD08 /* MockSelectedPostRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSelectedPostRepo.swift; sourceTree = "<group>"; };
 		B31A96C1232E017D00D9FD08 /* MockPostsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostsListCoordinator.swift; sourceTree = "<group>"; };
+		B31A96C6232E112800D9FD08 /* PostDetailsUseCaseProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsUseCaseProtocols.swift; sourceTree = "<group>"; };
+		B31A96C8232E16D700D9FD08 /* PostDetailsUseCaseSequential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsUseCaseSequential.swift; sourceTree = "<group>"; };
+		B31A96CA232E197E00D9FD08 /* PostRemoteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteUseCase.swift; sourceTree = "<group>"; };
+		B31A96CC232E1B3400D9FD08 /* AuthorRemoteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRemoteUseCase.swift; sourceTree = "<group>"; };
+		B31A96CE232E1BFE00D9FD08 /* CommentsRemoteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRemoteUseCase.swift; sourceTree = "<group>"; };
+		B31A96D1232E1D1F00D9FD08 /* PostDetailsViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModelProtocols.swift; sourceTree = "<group>"; };
+		B31A96D3232E204C00D9FD08 /* PostDetailsViewModelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModelDefault.swift; sourceTree = "<group>"; };
+		B31A96D5232E226C00D9FD08 /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		B31A96D7232E25A600D9FD08 /* PostDetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsBuilder.swift; sourceTree = "<group>"; };
+		B31A96DA232E38E300D9FD08 /* PostDetailsUseCaseSequentialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsUseCaseSequentialTests.swift; sourceTree = "<group>"; };
+		B31A96DD232E3A6A00D9FD08 /* MockPostUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostUseCase.swift; sourceTree = "<group>"; };
+		B31A96DF232E3DD000D9FD08 /* MockAuthorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthorUseCase.swift; sourceTree = "<group>"; };
+		B31A96E1232E3E6400D9FD08 /* MockCommentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCommentsUseCase.swift; sourceTree = "<group>"; };
+		B31A96E3232E431300D9FD08 /* PostRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		B31A96E5232E518700D9FD08 /* WeakRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRef.swift; sourceTree = "<group>"; };
+		B31A96E7232E5ECD00D9FD08 /* AuthorRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		B31A96E9232E5EE700D9FD08 /* CommentsRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		B31A96EC232E625300D9FD08 /* PostDetailsViewModelDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModelDefaultTests.swift; sourceTree = "<group>"; };
+		B31A96EE232E639C00D9FD08 /* MockPostDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockPostDetailsUseCase.swift; path = ../MockPostDetailsUseCase.swift; sourceTree = "<group>"; };
+		B31A96F0232E683200D9FD08 /* NumberOfCommentsFormatterDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfCommentsFormatterDefault.swift; sourceTree = "<group>"; };
+		B31A96F2232E692600D9FD08 /* MockNumberOfCommentsFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNumberOfCommentsFormatter.swift; sourceTree = "<group>"; };
+		B31A96F5232E6AFF00D9FD08 /* NumberOfCommentsFormatterDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfCommentsFormatterDefaultTests.swift; sourceTree = "<group>"; };
 		B33EC0E6232C0B08003255A7 /* PostsViewerSimplified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostsViewerSimplified.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33EC0E9232C0B08003255A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B33EC0F0232C0B09003255A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,8 +110,6 @@
 		B33EC117232C1ABD003255A7 /* MockHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHttpClient.swift; sourceTree = "<group>"; };
 		B33EC11A232C4071003255A7 /* PostsListViewModelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewModelDefault.swift; sourceTree = "<group>"; };
 		B33EC11C232C4093003255A7 /* PostsListViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewModelProtocols.swift; sourceTree = "<group>"; };
-		B33EC11F232C4504003255A7 /* Result+Fold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Fold.swift"; sourceTree = "<group>"; };
-		B33EC122232C4542003255A7 /* Result+FoldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+FoldTests.swift"; sourceTree = "<group>"; };
 		B33EC124232C479B003255A7 /* PostsListViewModelDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewModelDefaultTests.swift; sourceTree = "<group>"; };
 		B33EC127232C47FF003255A7 /* MockAllPostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAllPostsUseCase.swift; sourceTree = "<group>"; };
 		B33EC129232C5343003255A7 /* PostsListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListBuilder.swift; sourceTree = "<group>"; };
@@ -105,7 +145,6 @@
 			children = (
 				B33EC13B232C57A0003255A7 /* PostsListViewController.swift */,
 				B31A96B3232D453E00D9FD08 /* PostsListDataSourceDefault.swift */,
-				B31A96BC232DFFE400D9FD08 /* SelectedPostRepoDefault.swift */,
 				B31A96B7232DE9A600D9FD08 /* Tests */,
 			);
 			path = View;
@@ -125,6 +164,93 @@
 				B33EC127232C47FF003255A7 /* MockAllPostsUseCase.swift */,
 				B31A96BF232E013F00D9FD08 /* MockSelectedPostRepo.swift */,
 				B31A96C1232E017D00D9FD08 /* MockPostsListCoordinator.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B31A96C3232E04D300D9FD08 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				B31A96BA232DFC8F00D9FD08 /* PostsCoordinatorDefault.swift */,
+				B31A96BC232DFFE400D9FD08 /* SelectedPostRepoDefault.swift */,
+				B33EC10A232C0C48003255A7 /* List */,
+				B31A96C4232E055100D9FD08 /* Details */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		B31A96C4232E055100D9FD08 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				B31A96D7232E25A600D9FD08 /* PostDetailsBuilder.swift */,
+				B31A96D5232E226C00D9FD08 /* PostDetailsViewController.swift */,
+				B31A96D0232E1D0400D9FD08 /* ViewModel */,
+				B31A96C5232E0FDF00D9FD08 /* UseCases */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		B31A96C5232E0FDF00D9FD08 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				B31A96C6232E112800D9FD08 /* PostDetailsUseCaseProtocols.swift */,
+				B31A96C8232E16D700D9FD08 /* PostDetailsUseCaseSequential.swift */,
+				B31A96CA232E197E00D9FD08 /* PostRemoteUseCase.swift */,
+				B31A96CC232E1B3400D9FD08 /* AuthorRemoteUseCase.swift */,
+				B31A96CE232E1BFE00D9FD08 /* CommentsRemoteUseCase.swift */,
+				B31A96D9232E38CB00D9FD08 /* Tests */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		B31A96D0232E1D0400D9FD08 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B31A96D1232E1D1F00D9FD08 /* PostDetailsViewModelProtocols.swift */,
+				B31A96D3232E204C00D9FD08 /* PostDetailsViewModelDefault.swift */,
+				B31A96F0232E683200D9FD08 /* NumberOfCommentsFormatterDefault.swift */,
+				B31A96EB232E624000D9FD08 /* Tests */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B31A96D9232E38CB00D9FD08 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B31A96DA232E38E300D9FD08 /* PostDetailsUseCaseSequentialTests.swift */,
+				B31A96E3232E431300D9FD08 /* PostRemoteUseCaseTests.swift */,
+				B31A96E7232E5ECD00D9FD08 /* AuthorRemoteUseCaseTests.swift */,
+				B31A96E9232E5EE700D9FD08 /* CommentsRemoteUseCaseTests.swift */,
+				B31A96DC232E3A5600D9FD08 /* Mocks */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B31A96DC232E3A5600D9FD08 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B31A96DD232E3A6A00D9FD08 /* MockPostUseCase.swift */,
+				B31A96DF232E3DD000D9FD08 /* MockAuthorUseCase.swift */,
+				B31A96E1232E3E6400D9FD08 /* MockCommentsUseCase.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B31A96EB232E624000D9FD08 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B31A96EC232E625300D9FD08 /* PostDetailsViewModelDefaultTests.swift */,
+				B31A96F5232E6AFF00D9FD08 /* NumberOfCommentsFormatterDefaultTests.swift */,
+				B31A96F4232E69B000D9FD08 /* Mocks */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B31A96F4232E69B000D9FD08 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B31A96EE232E639C00D9FD08 /* MockPostDetailsUseCase.swift */,
+				B31A96F2232E692600D9FD08 /* MockNumberOfCommentsFormatter.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -151,9 +277,8 @@
 			isa = PBXGroup;
 			children = (
 				B33EC109232C0B74003255A7 /* App */,
-				B33EC10A232C0C48003255A7 /* PostsList */,
+				B31A96C3232E04D300D9FD08 /* Posts */,
 				B33EC12B232C53F4003255A7 /* HttpClient */,
-				B33EC11E232C44E5003255A7 /* Common */,
 			);
 			path = PostsViewerSimplified;
 			sourceTree = "<group>";
@@ -170,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				B33EC0E9232C0B08003255A7 /* AppDelegate.swift */,
+				B31A96E5232E518700D9FD08 /* WeakRef.swift */,
 				B33EC0F0232C0B09003255A7 /* Assets.xcassets */,
 				B33EC0F2232C0B09003255A7 /* LaunchScreen.storyboard */,
 				B33EC0F5232C0B09003255A7 /* Info.plist */,
@@ -177,16 +303,15 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		B33EC10A232C0C48003255A7 /* PostsList */ = {
+		B33EC10A232C0C48003255A7 /* List */ = {
 			isa = PBXGroup;
 			children = (
 				B33EC129232C5343003255A7 /* PostsListBuilder.swift */,
-				B31A96BA232DFC8F00D9FD08 /* PostsListCoordinatorDefault.swift */,
 				B31A96B2232D451F00D9FD08 /* View */,
 				B33EC119232C4041003255A7 /* ViewModel */,
 				B33EC10C232C0CC1003255A7 /* UseCases */,
 			);
-			path = PostsList;
+			path = List;
 			sourceTree = "<group>";
 		};
 		B33EC10C232C0CC1003255A7 /* UseCases */ = {
@@ -217,23 +342,6 @@
 				B33EC126232C47AB003255A7 /* Tests */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		B33EC11E232C44E5003255A7 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				B33EC11F232C4504003255A7 /* Result+Fold.swift */,
-				B33EC121232C4513003255A7 /* Tests */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		B33EC121232C4513003255A7 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				B33EC122232C4542003255A7 /* Result+FoldTests.swift */,
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		B33EC126232C47AB003255A7 /* Tests */ = {
@@ -376,19 +484,29 @@
 			files = (
 				B33EC12D232C5431003255A7 /* URLSessionProtocol.swift in Sources */,
 				B33EC13C232C57A0003255A7 /* PostsListViewController.swift in Sources */,
+				B31A96C7232E112800D9FD08 /* PostDetailsUseCaseProtocols.swift in Sources */,
 				B33EC131232C547E003255A7 /* HttpClientURLSession.swift in Sources */,
 				B33EC12F232C5451003255A7 /* URLSession+URLSessionProtocol.swift in Sources */,
 				B33EC110232C0E0B003255A7 /* HttpClientProtocol.swift in Sources */,
 				B33EC11B232C4071003255A7 /* PostsListViewModelDefault.swift in Sources */,
-				B33EC120232C4504003255A7 /* Result+Fold.swift in Sources */,
+				B31A96CD232E1B3400D9FD08 /* AuthorRemoteUseCase.swift in Sources */,
+				B31A96D6232E226C00D9FD08 /* PostDetailsViewController.swift in Sources */,
+				B31A96D2232E1D1F00D9FD08 /* PostDetailsViewModelProtocols.swift in Sources */,
 				B33EC112232C0E4B003255A7 /* AllPostsRemoteUseCase.swift in Sources */,
+				B31A96D4232E204C00D9FD08 /* PostDetailsViewModelDefault.swift in Sources */,
 				B33EC0EA232C0B08003255A7 /* AppDelegate.swift in Sources */,
+				B31A96F1232E683200D9FD08 /* NumberOfCommentsFormatterDefault.swift in Sources */,
 				B33EC12A232C5343003255A7 /* PostsListBuilder.swift in Sources */,
 				B31A96BD232DFFE400D9FD08 /* SelectedPostRepoDefault.swift in Sources */,
-				B31A96BB232DFC8F00D9FD08 /* PostsListCoordinatorDefault.swift in Sources */,
+				B31A96CF232E1BFE00D9FD08 /* CommentsRemoteUseCase.swift in Sources */,
+				B31A96E6232E518700D9FD08 /* WeakRef.swift in Sources */,
+				B31A96BB232DFC8F00D9FD08 /* PostsCoordinatorDefault.swift in Sources */,
+				B31A96C9232E16D700D9FD08 /* PostDetailsUseCaseSequential.swift in Sources */,
 				B31A96B4232D453E00D9FD08 /* PostsListDataSourceDefault.swift in Sources */,
 				B33EC11D232C4093003255A7 /* PostsListViewModelProtocols.swift in Sources */,
 				B33EC10E232C0D08003255A7 /* PostsListUseCaseProtocols.swift in Sources */,
+				B31A96D8232E25A600D9FD08 /* PostDetailsBuilder.swift in Sources */,
+				B31A96CB232E197E00D9FD08 /* PostRemoteUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,16 +514,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31A96EA232E5EE700D9FD08 /* CommentsRemoteUseCaseTests.swift in Sources */,
 				B33EC128232C47FF003255A7 /* MockAllPostsUseCase.swift in Sources */,
+				B31A96DB232E38E300D9FD08 /* PostDetailsUseCaseSequentialTests.swift in Sources */,
 				B33EC125232C479B003255A7 /* PostsListViewModelDefaultTests.swift in Sources */,
 				B31A96B6232DE99C00D9FD08 /* PostsListDataSourceDefaultTests.swift in Sources */,
 				B33EC135232C54D4003255A7 /* MockURLSessionProtocol.swift in Sources */,
+				B31A96EF232E639C00D9FD08 /* MockPostDetailsUseCase.swift in Sources */,
+				B31A96E4232E431300D9FD08 /* PostRemoteUseCaseTests.swift in Sources */,
+				B31A96DE232E3A6A00D9FD08 /* MockPostUseCase.swift in Sources */,
 				B33EC139232C5541003255A7 /* HttpClientURLSessionTests.swift in Sources */,
-				B33EC123232C4542003255A7 /* Result+FoldTests.swift in Sources */,
+				B31A96F3232E692600D9FD08 /* MockNumberOfCommentsFormatter.swift in Sources */,
+				B31A96E8232E5ECD00D9FD08 /* AuthorRemoteUseCaseTests.swift in Sources */,
+				B31A96E0232E3DD000D9FD08 /* MockAuthorUseCase.swift in Sources */,
+				B31A96E2232E3E6400D9FD08 /* MockCommentsUseCase.swift in Sources */,
 				B33EC118232C1ABD003255A7 /* MockHttpClient.swift in Sources */,
+				B31A96ED232E625300D9FD08 /* PostDetailsViewModelDefaultTests.swift in Sources */,
 				B33EC116232C19AA003255A7 /* AllPostsRemoteUseCaseTests.swift in Sources */,
 				B31A96C0232E013F00D9FD08 /* MockSelectedPostRepo.swift in Sources */,
 				B33EC137232C54F7003255A7 /* MockURLSessionDataTask.swift in Sources */,
+				B31A96F6232E6AFF00D9FD08 /* NumberOfCommentsFormatterDefaultTests.swift in Sources */,
 				B31A96C2232E017D00D9FD08 /* MockPostsListCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
