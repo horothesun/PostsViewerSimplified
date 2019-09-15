@@ -8,6 +8,10 @@ Zero-dependency app to display a list of posts and each post details screen.
 
 ## Screens
 
+<p align="center">
+<img src="./images/PostsViewerSimplified.gif">
+</p>
+
 ### Posts list
 
 Each post has just a title.
