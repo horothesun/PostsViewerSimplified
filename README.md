@@ -1,8 +1,9 @@
 # Posts Viewer
 Zero-dependency app to display a list of posts and each post details screen.
 
-- [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) with MVVM+Coordinators for the UI layer.
-- The code is fully unit tested.
+- [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) (business logic-centric) with MVVM+Coordinators for the UI layer.
+- Fully unit tested.
+- The code is fully modular and it could be split into completely indipendent modules/targets to improve build times.
 - 100% remote data layer (no persistence).
 - No need to install any dependency after cloning/downloading the repo for the first time.
 
@@ -17,10 +18,10 @@ When a post is tapped, the app navigates to the details screen.
 
 ### Post details
 
-A post details screen shows:
+The post details screen shows
 
-* title,
-* author's name,
+* title
+* author's name
 * post content (via the `body`) and
 * number of comments.
 
