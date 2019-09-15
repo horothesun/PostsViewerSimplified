@@ -5,13 +5,19 @@ public final class PostsListViewModelDefault {
     private typealias `Self` = PostsListViewModelDefault
 
     private let allPostsUseCase: AllPostsUseCase
+    private weak var selectedPostRepo: SelectedPostRepo?
+    private weak var coordinator: PostsListCoordinator?
     private let processingQueue: DispatchQueue
 
     public init(
         allPostsUseCase: AllPostsUseCase,
+        selectedPostRepo: SelectedPostRepo,
+        coordinator: PostsListCoordinator,
         processingQueue: DispatchQueue
     ) {
         self.allPostsUseCase = allPostsUseCase
+        self.selectedPostRepo = selectedPostRepo
+        self.coordinator = coordinator
         self.processingQueue = processingQueue
     }
 }
@@ -22,7 +28,7 @@ extension PostsListViewModelDefault: PostsListViewModel {
 
     public func title() -> String { return "Posts" }
 
-    public func displayModel(
+    public func updateDisplayModel(
         start: @escaping () -> Void,
         success: @escaping (SuccessDisplayModel) -> Void,
         failure: @escaping (FailureDisplayModel) -> Void
@@ -35,6 +41,11 @@ extension PostsListViewModelDefault: PostsListViewModel {
                 DispatchQueue.main.async { result.fold(success: success, failure: failure) }
             }
         }
+    }
+
+    public func onSelected(postDisplayModel: SuccessDisplayModel.Post) {
+        selectedPostRepo?.selectedPostId = postDisplayModel.id
+        coordinator?.proceedToPostDetails()
     }
 
     private static func resultDisplayModel(

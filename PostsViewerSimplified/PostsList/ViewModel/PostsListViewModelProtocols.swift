@@ -24,9 +24,18 @@ public struct FailureDisplayModel: Error {
 
 public protocol PostsListViewModel {
     func title() -> String
-    func displayModel(
+    func updateDisplayModel(
         start: @escaping () -> Void,
         success: @escaping (SuccessDisplayModel) -> Void,
         failure: @escaping (FailureDisplayModel) -> Void
     )
+    func onSelected(postDisplayModel: SuccessDisplayModel.Post)
+}
+
+public protocol SelectedPostRepo: class {
+    var selectedPostId: Int? { get set }
+}
+
+public protocol PostsListCoordinator: class {
+    func proceedToPostDetails()
 }
