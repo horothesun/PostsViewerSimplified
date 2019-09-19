@@ -107,46 +107,57 @@ final class PostDetailsViewController: UIViewController {
     }
 
     private func configureLayout() {
+        guard
+            let activityIndicatorSuperview = activityIndicator.superview,
+            let errorLabelSuperview = errorLabel.superview,
+            let postTitleLabelSuperview = postTitleLabel.superview,
+            let authorLabelSuperview = authorLabel.superview,
+            let postContentLabelSuperview = postContentLabel.superview,
+            let numberOfCommentsLabelSuperview = numberOfCommentsLabel.superview,
+            let containerViewSuperview = containerView.superview,
+            let scrollViewSuperview = scrollView.superview
+        else { return }
+
         NSLayoutConstraint.activate([
-            activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            activityIndicator.centerXAnchor.constraint(equalTo: activityIndicatorSuperview.centerXAnchor),
+            activityIndicator.centerYAnchor.constraint(equalTo: activityIndicatorSuperview.centerYAnchor)
         ])
         NSLayoutConstraint.activate([
-            errorLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            errorLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            errorLabel.centerXAnchor.constraint(equalTo: errorLabelSuperview.centerXAnchor),
+            errorLabel.centerYAnchor.constraint(equalTo: errorLabelSuperview.centerYAnchor)
         ])
         NSLayoutConstraint.activate([
-            postTitleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 15),
-            postTitleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 15),
-            postTitleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -15)
+            postTitleLabel.topAnchor.constraint(equalTo: postTitleLabelSuperview.topAnchor, constant: 15),
+            postTitleLabel.leadingAnchor.constraint(equalTo: postTitleLabelSuperview.leadingAnchor, constant: 15),
+            postTitleLabel.trailingAnchor.constraint(equalTo: postTitleLabelSuperview.trailingAnchor, constant: -15)
         ])
         NSLayoutConstraint.activate([
             authorLabel.topAnchor.constraint(equalTo: postTitleLabel.bottomAnchor, constant: 10),
-            authorLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 15),
-            authorLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -15)
+            authorLabel.leadingAnchor.constraint(equalTo: authorLabelSuperview.leadingAnchor, constant: 15),
+            authorLabel.trailingAnchor.constraint(equalTo: authorLabelSuperview.trailingAnchor, constant: -15)
         ])
         NSLayoutConstraint.activate([
             postContentLabel.topAnchor.constraint(equalTo: authorLabel.bottomAnchor, constant: 10),
-            postContentLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 15),
-            postContentLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -15)
+            postContentLabel.leadingAnchor.constraint(equalTo: postContentLabelSuperview.leadingAnchor, constant: 15),
+            postContentLabel.trailingAnchor.constraint(equalTo: postContentLabelSuperview.trailingAnchor, constant: -15)
         ])
         NSLayoutConstraint.activate([
             numberOfCommentsLabel.topAnchor.constraint(equalTo: postContentLabel.bottomAnchor, constant: 10),
-            numberOfCommentsLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -15),
-            numberOfCommentsLabel.bottomAnchor.constraint(equalTo: containerView.safeAreaLayoutGuide.bottomAnchor, constant: -15)
+            numberOfCommentsLabel.trailingAnchor.constraint(equalTo: numberOfCommentsLabelSuperview.trailingAnchor, constant: -15),
+            numberOfCommentsLabel.bottomAnchor.constraint(equalTo: numberOfCommentsLabelSuperview.safeAreaLayoutGuide.bottomAnchor, constant: -15)
         ])
         NSLayoutConstraint.activate([
-            containerView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-            containerView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            containerView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            containerView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            containerView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor)
+            containerView.topAnchor.constraint(equalTo: containerViewSuperview.topAnchor),
+            containerView.leadingAnchor.constraint(equalTo: containerViewSuperview.leadingAnchor),
+            containerView.trailingAnchor.constraint(equalTo: containerViewSuperview.trailingAnchor),
+            containerView.bottomAnchor.constraint(equalTo: containerViewSuperview.bottomAnchor),
+            containerView.widthAnchor.constraint(equalTo: scrollViewSuperview.safeAreaLayoutGuide.widthAnchor)
         ])
         NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            scrollView.topAnchor.constraint(equalTo: scrollViewSuperview.safeAreaLayoutGuide.topAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: scrollViewSuperview.safeAreaLayoutGuide.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: scrollViewSuperview.safeAreaLayoutGuide.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: scrollViewSuperview.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
 

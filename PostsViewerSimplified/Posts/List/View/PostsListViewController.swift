@@ -78,19 +78,25 @@ final class PostsListViewController: UIViewController {
     }
 
     private func configureLayout() {
+        guard
+            let tableViewSuperview = tableView.superview,
+            let activityIndicatorSuperview = activityIndicator.superview,
+            let errorLabelSuperview = errorLabel.superview
+        else { return }
+
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            tableView.topAnchor.constraint(equalTo: tableViewSuperview.safeAreaLayoutGuide.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: tableViewSuperview.safeAreaLayoutGuide.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: tableViewSuperview.safeAreaLayoutGuide.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: tableViewSuperview.safeAreaLayoutGuide.bottomAnchor)
         ])
         NSLayoutConstraint.activate([
-            activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            activityIndicator.centerXAnchor.constraint(equalTo: activityIndicatorSuperview.centerXAnchor),
+            activityIndicator.centerYAnchor.constraint(equalTo: activityIndicatorSuperview.centerYAnchor)
         ])
         NSLayoutConstraint.activate([
-            errorLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            errorLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            errorLabel.centerXAnchor.constraint(equalTo: errorLabelSuperview.centerXAnchor),
+            errorLabel.centerYAnchor.constraint(equalTo: errorLabelSuperview.centerYAnchor)
         ])
     }
 
