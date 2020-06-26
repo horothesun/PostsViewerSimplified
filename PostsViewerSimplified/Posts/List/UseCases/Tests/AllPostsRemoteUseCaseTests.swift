@@ -2,6 +2,10 @@ import XCTest
 import PostsViewerSimplified
 
 final class AllPostsRemoteUseCaseTests: XCTestCase {
+    
+    func test_failing() {
+        XCTFail("❌❌❌ Failing on purpose! ❌❌❌")
+    }
 
     func test_getAllPostsFails_whenHttpClientFails() {
         let (httpClientMock, useCase) = makeUseCase()
