@@ -4,7 +4,7 @@ import PostsViewerSimplified
 final class AllPostsRemoteUseCaseTests: XCTestCase {
     
     func test_failing() {
-        XCTFail("❌❌❌ Failing on purpose! ❌❌❌")
+        XCTAssertTrue(true)
     }
 
     func test_getAllPostsFails_whenHttpClientFails() {
