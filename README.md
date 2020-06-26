@@ -1,4 +1,5 @@
 # Posts Viewer
+
 Zero-dependency app to display a list of posts and each post details screen.
 
 - [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) (business logic-centric) with MVVM+Coordinators for the UI layer.
